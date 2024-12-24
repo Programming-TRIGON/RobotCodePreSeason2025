@@ -1,10 +1,21 @@
 package frc.robot.subsystems.Transporter;
 
-
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Transporter extends SubsystemBase {
-    public Transporter() {
+    private final TalonSRX rightMotor = TransporterConstants.RIGHT_MOTOR;
+    private final TalonSRX leftMotor = TransporterConstants.LEFT_MOTOR;
+
+    void setVoltageOutput(double percentageMotorOutput) {
+        rightMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
+        leftMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
+    }
+
+    void stopMotors() {
+        rightMotor.set(ControlMode.PercentOutput, 0);
+        leftMotor.set(ControlMode.PercentOutput, 0);
     }
 }
 

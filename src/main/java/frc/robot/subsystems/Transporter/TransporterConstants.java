@@ -9,7 +9,7 @@ public class TransporterConstants {
             RIGHT_MOTOR_ID = 1,
             LEFT_MOTOR_ID = 2;
 
-    private static final TalonSRX
+    static final TalonSRX
             RIGHT_MOTOR = new TalonSRX(RIGHT_MOTOR_ID),
             LEFT_MOTOR = new TalonSRX(LEFT_MOTOR_ID);
 
