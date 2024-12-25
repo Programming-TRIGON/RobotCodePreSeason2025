@@ -15,4 +15,8 @@ public class TransporterCommands {
                 RobotContainer.TRANSPORTER
         );
     }
+
+    public static Command getSetTransporterStateCommand(TransporterConstants.TransporterState targetState) {
+        return getSetMotorOutputCommand(targetState.targetMotorOutput);
+    }
 }

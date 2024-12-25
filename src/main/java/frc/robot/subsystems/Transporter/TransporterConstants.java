@@ -2,7 +2,6 @@ package frc.robot.subsystems.Transporter;
 
 import com.ctre.phoenix.motorcontrol.InvertType;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
-import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class TransporterConstants {
@@ -35,5 +34,17 @@ public class TransporterConstants {
 
         LEFT_MOTOR.setInverted(LEFT_MOTOR_INVERTED_VALUE);
         LEFT_MOTOR.setNeutralMode(NEUTRAL_MODE);
+    }
+
+    public enum TransporterState {
+        COLLECT(50),
+        EJECT(-50),
+        REST(0);
+
+        final double targetMotorOutput;
+
+        TransporterState(double setTransporterState) {
+            this.targetMotorOutput = setTransporterState;
+        }
     }
 }
