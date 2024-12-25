@@ -11,7 +11,7 @@ import frc.robot.subsystems.Transporter.Transporter;
 
 
 public class RobotContainer {
-    public static Transporter TRANSPORTER = new Transporter();
+    public static final Transporter TRANSPORTER = new Transporter();
 
     public RobotContainer() {
         configureBindings();
