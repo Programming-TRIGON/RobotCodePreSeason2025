@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj2.command.FunctionalCommand;
 import frc.robot.RobotContainer;
 
 public class TransporterCommands {
-    public static Command getSetMotorOutputCommand(double motorOutput) {
+    private static Command getSetMotorOutputCommand(double motorOutput) {
         return new FunctionalCommand(
                 () -> {
                 },
