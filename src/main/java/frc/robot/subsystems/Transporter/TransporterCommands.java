@@ -12,7 +12,7 @@ public class TransporterCommands {
     private static Command getSetMotorOutputCommand(double motorOutput) {
         return new FunctionalCommand(
                 () -> RobotContainer.TRANSPORTER.setVoltageOutput(motorOutput) ,
-                () -> RobotContainer.TRANSPORTER.setVoltageOutput(motorOutput),
+                () -> {},
                 (interrupted) -> RobotContainer.TRANSPORTER.stopMotors(),
                 () -> false,
                 RobotContainer.TRANSPORTER
