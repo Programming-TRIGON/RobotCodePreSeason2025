@@ -15,7 +15,7 @@ public class TransporterConstants {
 
     private static final InvertType RIGHT_MOTOR_INVERTED_VALUE = InvertType.None;
     private static final InvertType LEFT_MOTOR_INVERTED_VALUE = InvertType.InvertMotorOutput;
-    private static final NeutralMode NEUTRAL_MODE = NeutralMode.Brake;
+    private static final NeutralMode NEUTRAL_MODE = NeutralMode.Coast;
     private static final double VOLTAGE_COMPENSATION_VALUE = 12;
 
     static {
