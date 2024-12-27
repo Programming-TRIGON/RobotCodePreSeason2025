@@ -42,8 +42,8 @@ public class TransporterConstants {
     }
 
     public enum TransporterState {
-        COLLECT(6),
-        EJECT(-6),
+        COLLECT(0.5),
+        EJECT(-0.5),
         REST(0);
 
         final double targetMotorOutput;

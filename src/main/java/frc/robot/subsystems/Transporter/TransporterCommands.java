@@ -5,13 +5,13 @@ import edu.wpi.first.wpilibj2.command.FunctionalCommand;
 import frc.robot.RobotContainer;
 
 public class TransporterCommands {
-    public static Command getSetTransporterStateCommand(TransporterConstants.TransporterState targetState) {
+    public static Command getSetTargetStateCommand(TransporterConstants.TransporterState targetState) {
         return getSetMotorOutputCommand(targetState.targetMotorOutput);
     }
 
     private static Command getSetMotorOutputCommand(double motorOutput) {
         return new FunctionalCommand(
-                () -> RobotContainer.TRANSPORTER.setVoltageOutput(motorOutput) ,
+                () -> RobotContainer.TRANSPORTER.setTargetPercentageVoltageOutput(motorOutput) ,
                 () -> {},
                 (interrupted) -> RobotContainer.TRANSPORTER.stopMotors(),
                 () -> false,

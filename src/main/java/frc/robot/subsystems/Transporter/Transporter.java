@@ -8,14 +8,13 @@ public class Transporter extends SubsystemBase {
     private final TalonSRX rightMotor = TransporterConstants.RIGHT_MOTOR;
     private final TalonSRX leftMotor = TransporterConstants.LEFT_MOTOR;
 
-    void setVoltageOutput(double percentageMotorOutput) {
+    void setTargetPercentageVoltageOutput(double percentageMotorOutput) {
         rightMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
         leftMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
     }
 
     void stopMotors() {
-        rightMotor.set(ControlMode.PercentOutput, 0);
-        leftMotor.set(ControlMode.PercentOutput, 0);
+        setTargetPercentageVoltageOutput(0);
     }
 }
 
