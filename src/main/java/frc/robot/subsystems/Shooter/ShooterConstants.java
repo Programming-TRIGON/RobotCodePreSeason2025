@@ -28,6 +28,7 @@ public class ShooterConstants {
 
         RIGHT_MOTOR.setInverted(RIGHT_MOTOR_INVERTED_VALUE);
         RIGHT_MOTOR.setNeutralMode(NEUTRAL_MODE);
+        
         RIGHT_MOTOR.enableVoltageCompensation(true);
         RIGHT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_SATURATION);
     }
@@ -37,6 +38,7 @@ public class ShooterConstants {
 
         LEFT_MOTOR.setInverted(LEFT_MOTOR_INVERTED_VALUE);
         LEFT_MOTOR.setNeutralMode(NEUTRAL_MODE);
+
         LEFT_MOTOR.enableVoltageCompensation(true);
         LEFT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_SATURATION);
     }
