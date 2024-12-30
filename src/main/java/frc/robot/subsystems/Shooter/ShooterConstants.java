@@ -46,13 +46,13 @@ public class ShooterConstants {
     public enum ShooterState {
         SHOOT(1),
         EJECT(0.3),
-        COLLECT(-0.3),
+        EJECT_THROUGH_INTAKE(-0.3),
         STOP(0);
 
         final double setShooterState;
 
-        ShooterState(double setShooterState) {
-            this.setShooterState = setShooterState;
+        ShooterState(double setTargetState) {
+            this.setShooterState = setTargetState;
         }
     }
 }
