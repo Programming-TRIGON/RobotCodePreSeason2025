@@ -47,10 +47,10 @@ public class ShooterConstants {
         REVERSE(-0.3),
         STOP(0);
 
-        final double targetMotorOutput;
+        final double setShooterState;
 
         ShooterState(double setShooterState) {
-            this.targetMotorOutput = setShooterState;
+            this.setShooterState = setShooterState;
         }
     }
 }

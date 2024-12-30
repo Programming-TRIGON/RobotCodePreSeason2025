@@ -6,7 +6,7 @@ import frc.robot.RobotContainer;
 
 public class ShooterCommands {
     public static Command getSetTargetStateCommand(ShooterConstants.ShooterState targetState) {
-        return getSetMotorOutputCommand(targetState.targetMotorOutput);
+        return getSetMotorOutputCommand(targetState.setShooterState);
     }
 
     private static Command getSetMotorOutputCommand(double motorOutput) {
