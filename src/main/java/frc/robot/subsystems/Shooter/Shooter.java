@@ -10,10 +10,10 @@ public class Shooter extends SubsystemBase {
     private final WPI_TalonSRX leftMotor = ShooterConstants.LEFT_MOTOR;
 
     void stopMotors() {
-        setTargetPercentageVoltageOutput(0);
+        setMotorOutput(0);
     }
 
-    void setTargetPercentageVoltageOutput(double percentageMotorOutput) {
+    void setMotorOutput(double percentageMotorOutput) {
         rightMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
         leftMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
     }
