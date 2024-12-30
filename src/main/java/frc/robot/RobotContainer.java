@@ -11,7 +11,7 @@ import frc.robot.subsystems.Shooter.Shooter;
 
 
 public class RobotContainer {
-    
+
     public static final Shooter SHOOTER = new Shooter();
 
     public RobotContainer() {
@@ -21,6 +21,7 @@ public class RobotContainer {
     private void configureBindings() {
     }
 
+    
     public Command getAutonomousCommand() {
         return Commands.print("No autonomous command configured");
     }
