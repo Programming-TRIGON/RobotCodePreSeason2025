@@ -16,7 +16,7 @@ public class ShooterConstants {
     private static final InvertType RIGHT_MOTOR_INVERTED_VALUE = InvertType.None;
     private static final InvertType LEFT_MOTOR_INVERTED_VALUE = InvertType.InvertMotorOutput;
     private static final NeutralMode NEUTRAL_MODE = NeutralMode.Coast;
-    private static final double VOLTAGE_COMPENSATION_VALUE = 12;
+    private static final double VOLTAGE_COMPENSATION_SATURATION = 12;
 
     static {
         configureRightMotor();
@@ -29,7 +29,7 @@ public class ShooterConstants {
         RIGHT_MOTOR.setInverted(RIGHT_MOTOR_INVERTED_VALUE);
         RIGHT_MOTOR.setNeutralMode(NEUTRAL_MODE);
         RIGHT_MOTOR.enableVoltageCompensation(true);
-        RIGHT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_VALUE);
+        RIGHT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_SATURATION);
     }
 
     private static final void configureLeftMotor() {
@@ -38,7 +38,7 @@ public class ShooterConstants {
         LEFT_MOTOR.setInverted(LEFT_MOTOR_INVERTED_VALUE);
         LEFT_MOTOR.setNeutralMode(NEUTRAL_MODE);
         LEFT_MOTOR.enableVoltageCompensation(true);
-        LEFT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_VALUE);
+        LEFT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_SATURATION);
     }
 
     public enum ShooterState {
