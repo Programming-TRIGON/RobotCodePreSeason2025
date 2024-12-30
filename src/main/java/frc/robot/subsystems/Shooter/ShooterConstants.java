@@ -28,7 +28,7 @@ public class ShooterConstants {
 
         RIGHT_MOTOR.setInverted(RIGHT_MOTOR_INVERTED_VALUE);
         RIGHT_MOTOR.setNeutralMode(NEUTRAL_MODE);
-        
+
         RIGHT_MOTOR.enableVoltageCompensation(true);
         RIGHT_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_SATURATION);
     }
@@ -46,7 +46,7 @@ public class ShooterConstants {
     public enum ShooterState {
         SHOOT(1),
         EJECT(0.3),
-        REVERSE(-0.3),
+        COLLECT(-0.3),
         STOP(0);
 
         final double setShooterState;
