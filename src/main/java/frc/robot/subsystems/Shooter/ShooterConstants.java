@@ -45,7 +45,7 @@ public class ShooterConstants {
         SHOOT(1),
         EJECT(0.3),
         REVERSE(-0.3),
-        REST(0);
+        STOP(0);
 
         final double targetMotorOutput;
 
