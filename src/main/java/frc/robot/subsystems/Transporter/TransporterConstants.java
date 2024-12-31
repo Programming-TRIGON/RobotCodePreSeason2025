@@ -6,8 +6,8 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class TransporterConstants {
     private static final int
-            RIGHT_MOTOR_ID = 1,
-            LEFT_MOTOR_ID = 2;
+            RIGHT_MOTOR_ID = 10,
+            LEFT_MOTOR_ID = 11;
 
     static final WPI_TalonSRX
             RIGHT_MOTOR = new WPI_TalonSRX(RIGHT_MOTOR_ID),
