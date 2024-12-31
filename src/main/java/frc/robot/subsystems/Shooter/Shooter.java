@@ -25,5 +25,3 @@ public class Shooter extends SubsystemBase {
         leftMotor.set(ControlMode.PercentOutput, targetMotorOutputPercentage);
     }
 }
-
-
