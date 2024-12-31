@@ -8,7 +8,6 @@ public class ShooterConstants {
     private static final int
             RIGHT_MOTOR_ID = 3,
             LEFT_MOTOR_ID = 4;
-
     static final WPI_TalonSRX
             RIGHT_MOTOR = new WPI_TalonSRX(RIGHT_MOTOR_ID),
             LEFT_MOTOR = new WPI_TalonSRX(LEFT_MOTOR_ID);
@@ -46,7 +45,6 @@ public class ShooterConstants {
     public enum ShooterState {
         SHOOT(1),
         EJECT(0.3),
-        INHALE_GAME_PIECE(-0.3),
         STOP(0);
 
         final double setShooterState;
