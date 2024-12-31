@@ -33,8 +33,8 @@ public class IntakeConstants {
 
         final double targetMotorOutput;
 
-        IntakeState(double targetIntakeOutput) {
-            this.targetMotorOutput = targetIntakeOutput;
+        IntakeState(double targetOutput) {
+            this.targetMotorOutput = targetOutput;
         }
     }
 }
