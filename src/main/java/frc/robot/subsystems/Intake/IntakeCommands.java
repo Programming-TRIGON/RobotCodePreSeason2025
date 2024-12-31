@@ -8,6 +8,7 @@ public class IntakeCommands {
     public static Command getSetTargetStateCommand(IntakeConstants.IntakeState targetState) {
         return getSetMotorOutputCommand(targetState.targetMotorOutput);
     }
+
     private static Command getSetMotorOutputCommand(double motorOutput) {
         return new StartEndCommand(
                 () -> RobotContainer.INTAKE.setTargetVoltageOutput(motorOutput),
