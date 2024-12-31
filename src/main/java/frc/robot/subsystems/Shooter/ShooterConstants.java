@@ -6,8 +6,8 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class ShooterConstants {
     private static final int
-            RIGHT_MOTOR_ID = 3,
-            LEFT_MOTOR_ID = 4;
+            RIGHT_MOTOR_ID = 6,
+            LEFT_MOTOR_ID = 7;
     static final WPI_TalonSRX
             RIGHT_MOTOR = new WPI_TalonSRX(RIGHT_MOTOR_ID),
             LEFT_MOTOR = new WPI_TalonSRX(LEFT_MOTOR_ID);
