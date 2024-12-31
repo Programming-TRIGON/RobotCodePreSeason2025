@@ -13,9 +13,9 @@ public class ShooterCommands {
         );
     }
 
-    private static Command getSetMotorOutputCommand(double targetMotorOutputPercentage) {
+    private static Command getSetMotorOutputCommand(double targetVoltagePercentage) {
         return new StartEndCommand(
-                () -> RobotContainer.SHOOTER.setMotorOutput(targetMotorOutputPercentage),
+                () -> RobotContainer.SHOOTER.setMotorOutput(targetVoltagePercentage),
                 RobotContainer.SHOOTER::stopMotors,
                 RobotContainer.SHOOTER
         );
