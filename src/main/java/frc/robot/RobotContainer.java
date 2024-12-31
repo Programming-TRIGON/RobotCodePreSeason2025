@@ -10,8 +10,6 @@ import edu.wpi.first.wpilibj2.command.Commands;
 import frc.robot.subsystems.Intake.Intake;
 import frc.robot.subsystems.Transporter.Transporter;
 
-
-
 public class RobotContainer {
     public static final Intake INTAKE = new Intake();
     public static final Transporter TRANSPORTER = new Transporter();

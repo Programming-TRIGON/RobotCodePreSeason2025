@@ -17,4 +17,3 @@ public class Transporter extends SubsystemBase {
         leftMotor.set(ControlMode.PercentOutput, percentageMotorOutput);
     }
 }
-

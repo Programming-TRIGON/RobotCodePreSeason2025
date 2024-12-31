@@ -5,25 +5,25 @@ import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class IntakeConstants {
-    private static final int INTAKE_MOTOR_ID = 5;
+    private static final int MOTOR_ID = 5;
 
-    static final WPI_TalonSRX INTAKE_MOTOR = new WPI_TalonSRX(INTAKE_MOTOR_ID);
+    static final WPI_TalonSRX MOTOR = new WPI_TalonSRX(MOTOR_ID);
 
     private static final NeutralMode NEUTRAL_MODE = NeutralMode.Brake;
     private static final InvertType INVERTED_VALUE = InvertType.None;
     private static final double VOLTAGE_COMPENSATION_VALUE = 12;
 
     static {
-        configureFirstMotor();
+        configureMotor();
     }
 
-    private static void configureFirstMotor() {
-        INTAKE_MOTOR.configFactoryDefault();
+    private static void configureMotor() {
+        MOTOR.configFactoryDefault();
 
-        INTAKE_MOTOR.setNeutralMode(NEUTRAL_MODE);
-        INTAKE_MOTOR.setInverted(INVERTED_VALUE);
-        INTAKE_MOTOR.enableVoltageCompensation(true);
-        INTAKE_MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_VALUE);
+        MOTOR.setNeutralMode(NEUTRAL_MODE);
+        MOTOR.setInverted(INVERTED_VALUE);
+        MOTOR.enableVoltageCompensation(true);
+        MOTOR.configVoltageCompSaturation(VOLTAGE_COMPENSATION_VALUE);
     }
 
     public enum IntakeState {
