@@ -6,7 +6,6 @@ import frc.robot.subsystems.Shooter.Shooter;
 
 public class RobotContainer {
     public static final Shooter SHOOTER = new Shooter();
-    public static final Transporter TRANSPORTER = new Transporter();
 
     public RobotContainer() {
         configureBindings();
