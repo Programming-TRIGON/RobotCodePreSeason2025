@@ -17,7 +17,9 @@ public class Robot extends TimedRobot
     
     
     @Override
-    public void robotInit() {robotContainer = new RobotContainer();}
+    public void robotInit() {
+        robotContainer = new RobotContainer();
+    }
     
     
     @Override
