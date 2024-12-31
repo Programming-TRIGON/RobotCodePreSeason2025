@@ -8,10 +8,10 @@ public class Intake extends SubsystemBase {
     private final TalonSRX intakeMotor = IntakeConstants.INTAKE_MOTOR;
 
     void stopMotor() {
-        setTargetVoltagePercentOutput(0);
+        setTargetDutyCycleOutput(0);
     }
 
-    void setTargetVoltagePercentOutput(double motorOutput) {
+    void setTargetDutyCycleOutput(double motorOutput) {
         intakeMotor.set(ControlMode.PercentOutput, motorOutput);
     }
 }

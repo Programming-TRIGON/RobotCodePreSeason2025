@@ -11,7 +11,7 @@ public class IntakeCommands {
 
     private static Command getSetMotorOutputCommand(double motorOutput) {
         return new StartEndCommand(
-                () -> RobotContainer.INTAKE.setTargetVoltageOutput(motorOutput),
+                () -> RobotContainer.INTAKE.setTargetDutyCycleOutput(motorOutput),
                 RobotContainer.INTAKE::stopMotor,
                 RobotContainer.INTAKE
         );
