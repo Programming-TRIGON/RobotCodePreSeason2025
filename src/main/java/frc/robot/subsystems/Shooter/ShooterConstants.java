@@ -47,10 +47,10 @@ public class ShooterConstants {
         EJECT(0.3),
         STOP(0);
 
-        final double setShooterState;
+        final double shooterStateVoltagePercentage;
 
-        ShooterState(double setTargetState) {
-            this.setShooterState = setTargetState;
+        ShooterState(double shooterStateVoltagePercentage) {
+            this.shooterStateVoltagePercentage = shooterStateVoltagePercentage;
         }
     }
 }

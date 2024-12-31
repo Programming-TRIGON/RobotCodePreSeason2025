@@ -17,7 +17,7 @@ public class Shooter extends SubsystemBase {
 
     void setTargetState(ShooterConstants.ShooterState targetState) {
         currentState = targetState;
-        setMotorOutput(currentState.setShooterState);
+        setMotorOutput(currentState.shooterStateVoltagePercentage);
     }
 
     void setMotorOutput(double targetMotorOutputPercentage) {
